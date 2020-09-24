@@ -66,12 +66,13 @@
 					</div>
 				<!-- 仅在PHONE屏幕显示的：汉堡包按钮 -->
 				<div class="col-sm-2 hidden-md hidden-lg">
-					<span class="fa fa-navicon hamburger"></span></div>
+					<!-- 通过添加自定义的属性，为元素添加JS操作 -->
+					<span data-toggle="nav" class="fa fa-navicon hamburger"></span></div>
 				</div>
 			</div>
 		</div>
 		<!-- 3.导航条：navbar -->
-		<div class="navbar">
+		<div data-target="nav"  class="navbar">
 			<div class="container">
 				<div class="row">
 					<!-- 导航菜单 -->
@@ -86,7 +87,7 @@
 							<li><a href="#">校区</a></li>
 						</ul>
 					<!-- 仅在PHONE屏幕下显示的关闭按钮 -->
-					<span class="menu-close hidden-md hidden-lg">&times;</span>
+					<span data-close="nav" class="menu-close hidden-md hidden-lg">&times;</span>
 					</div>
 					<!-- 登录和注册 -->
 					<div class="col-md-2 col-lg-2 hidden-sm">
@@ -114,17 +115,17 @@
 					</ul>
 					<!-- 轮播指示器 -->
 					<ul class="indicators">
-						<li class="active"></li>
+						<li data-radio="active" class="active"></li>
 						<li></li>
 						<li></li>
 						<li></li>
 					</ul>
 					<!-- 上/下一张切换控件 -->
 					<div class="controls">
-						<div class="prev">
+						<div data-carousel="prev" class="prev">
 							<span class="fa fa-chevron-left"></span>
 						</div>
-						<div class="next">
+						<div data-caruosel="next" class="next">
 							<span class="fa fa-chevron-right"></span>
 						</div>
 					</div>
@@ -480,5 +481,8 @@
 			</div>
 		</div>
 	</div>
+	<!-- 在此处引入所有的JS文件 -->
+	     <script src="js/components.js"> </script>
+		 <script src="js/index.js" ></script>
 	</body>
 </html>

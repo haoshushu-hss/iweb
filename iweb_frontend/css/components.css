@@ -161,7 +161,14 @@
 		height: auto;/*必需覆盖所有屏幕下高度为52px的设定元素*/
 		z-index:9999;
 		/* 必需足够高，以盖住页面中绝对定位的元素 */
+		transition: all 0.3s;
+		
+		/* 在0.3s内将属性的改变添加过渡动画 */
 	}
+	.navbar.active{
+		/* 带.active的导航条取消平移变形 */
+		transform:translateX(0);
+		}
 	.menu>li{
 		float: none;/*取消浮动，PHONE下每个菜单单独占一行*/
 		text-align: center;
