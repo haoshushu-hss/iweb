@@ -18,8 +18,11 @@ h3 {
 	border-bottom: 1px solid #eee;
 }
 .schoolbar .address {
-	margin-top: 40px;
+	padding-top:40px ;
+	
 }
+
+
 .schoolbar .address .fa-map-marker {
 	color: #00be56;
 	font-size: 4em;
@@ -27,23 +30,27 @@ h3 {
 	margin-left: 3em;
 }
 .schoolbar .address .address-item{
-	margin-left: 13em;
+	margin-left: 9em;
 	font-size: 1.4em;
 	line-height: 1.6em;
 }
 .schoolbar .address .address-detail {
-	margin-left: 23em;
+	margin-left: 16em;
 	text-align: left;
 	color: #999;
 	font-size: .8em;
 	line-height: 2em;
 }
 @media  screen and (max-width:767px) {
-	.schoolbar .address .fa-map-marker{
-		margin-top: 10px;
+	.day1 {
+		height: 260px;
+		border-bottom: 1px solid #eee;
 	}
-	.schoolbar .address .address-item,
-	.schoolbar .address .address-detail{
-		margin-bottom:20px ;
+	.schoolbar .address .fa-map-marker {
+		color: #00be56;
+		font-size: 4em;
+		float: left;
+		margin-left: 3em;
+	    
 	}
 }
