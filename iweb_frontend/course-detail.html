@@ -4,17 +4,17 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="icon" href="./img/favicon.ico">
-		<title>课程详情-iweb在线课程</title>
+		<title>课程详情—iWeb在线课堂</title>
+		<link rel="icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/scaffolding.css">
 		<link rel="stylesheet" href="css/layout.css">
 		<link rel="stylesheet" href="css/components.css">
-		<link rel="stylesheet" href="css/course-detail.css"/>
+		<link rel="stylesheet" href="css/course-detail.css">
 	</head>
 	<body>
 		<!-- 1.最顶部的“灰色条”：topbar -->
-		<div class="topbar hidden-sm">
+		<div class="topbar  hidden-sm">
 			<div class="container">
 				<div class="text-right">
 					<a href="#" class="topbar-item">
@@ -41,15 +41,14 @@
 			<div class="container">
 				<div class="row">
 					<!-- 左侧的LOGO -->
-					<div class="col-sm-2 col-lg-2 logo-containers">
+					<div class="col-sm-2 col-lg-2 logo-container">
 						<a href="index.html">
 							<img src="img/logo.png" class="logo hidden-sm">
-							<img src="img/logo_reverse.png" class="logo_reverse hidden-lg hidden-md">
+							<img src="img/logo_reverse.png" class="logo_reverse hidden-md hidden-lg">
 						</a>
 					</div>
-					<!-- 靠右对齐的搜索框和购物车按钮 -->
+					<!-- 靠右对齐的搜索框和购物车按钮(PHONE屏幕隐藏) -->
 					<div class="col-sm-8 col-lg-10">
-
 						<!-- 搜索条 -->
 						<div class="search">
 							<input placeholder="课程搜索" class="search-input">
@@ -66,8 +65,9 @@
 					</div>
 					<!-- 仅在PHONE屏幕显示的：汉堡包按钮 -->
 					<div class="col-sm-2 hidden-md hidden-lg">
-						<!-- 通过添加自定义的属性，为元素添加JS操作 -->
-						<span data-toggle="nav" class="fa fa-navicon hamburger"></span></div>
+						<!-- 通过添加自定义属性，为元素添加JS操作 -->
+						<span data-toggle="nav" class="fa fa-navicon hamburger"></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -80,9 +80,9 @@
 						<ul class="menu">
 							<li><a href="index.html">首页</a></li>
 							<li class="active"><a href="course.html">全部课程</a></li>
-							<li><a href="course.html?typeId1">基础课程</a></li>
-							<li><a href="course.html?typeId2">核心课程</a></li>
-							<li><a href="course.html?typeId3">进阶课程</a></li>
+							<li><a href="course.html?typeId=1">基础课程</a></li>
+							<li><a href="course.html?typeId=2">核心课程</a></li>
+							<li><a href="course.html?typeId=3">进阶课程</a></li>
 							<li><a href="teacher.html">名师堂</a></li>
 							<li><a href="school.html">校区</a></li>
 						</ul>
@@ -90,7 +90,7 @@
 						<span data-close="nav" class="menu-close hidden-md hidden-lg">&times;</span>
 					</div>
 					<!-- 登录和注册 -->
-					<div class="col-md-2 col-lg-2 hidden-sm">
+					<div class="col-md-2 col-lg-2  hidden-sm">
 						<div class="user-center">
 							<div class="text-center">
 								<a href="#">登录</a>
@@ -102,75 +102,59 @@
 				</div>
 			</div>
 		</div>
-		<!-- 5、主体部分：mainbar -->
+		<!-- 5.主体部分：mainbar -->
 		<div class="mainbar">
 			<div class="container">
-				<!-- 5.1面包屑 -->
+				<!-- 5.1 面包屑 -->
 				<div class="breadcrumb">
 					<ul>
 						<li><a href="index.html">首页</a></li>
 						<li><a href="course.html">全部课程</a></li>
-						<li><a href="course-detail.html">课程详情</a></li>
+						<li><a href="course.html">课程详情</a></li>
 					</ul>
 				</div>
-		    <!-- 5.2课程介绍 -->
-			<div class="row course-header">
-				<div class="col-sm-12 col-md-6 col-lg-5">
-				<img class="pic" src="img/course/01.jpg" >
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7 course-header-text">
-					<h1>12-微信小程序开发</h1>
-				
+				<!-- 5.2 课程介绍：头部 -->
+				<div class="row course-header">
+					<div class="col-sm-12 col-md-6 col-lg-5">
+						<img class="pic" src="img/course/01.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-7 course-header-text">
+						<h1>12-微信小程序开发</h1>
 						<ul class="items">
 							<li>讲师：程涛</li>
 							<li>课时：1天</li>
-							<li>开课时间：每周一节课</li>
-							<li>上课地点:i前端各校区
-							<a href="#">查看各地区地址</a>
+							<li>开课时间：每周一开课</li>
+							<li>上课地点：i前端各校区 
+								<a href="#">查看各校区地址</a>
 							</li>
 						</ul>
-						<div class="price">
-							课程价格：
-							<span>￥599.00</span>
+						<div class="price">课程价格：
+							<span>¥ 599.00</span>
 						</div>
 						<button class="add-to-cart">
-							<span class="fa fa-shopping-cart"></span> 
+							<span class="fa fa-shopping-cart"></span>
 							加入购物车
 						</button>
 						<button class="add-to-favorite">
 							加入收藏
-							</button>
-					
+						</button>
+					</div>
+				</div>
+				<!-- 5.3 课程介绍：详情 -->
+				<div class="course-details">
+					<div class="course-details-header">
+						<h3>课程详情</h3>
+						<span></span>
+					</div>
+					<div class="course-details-body">
+						<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。</p>
+						<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。</p>
+						<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。</p>
+					</div>
 				</div>
 			</div>
-			<!-- 5.3课程介绍：详情 -->
-			<div class="course-details">
-				<div class="course-details-header">
-					<h3>课程详情</h3>
-					<span></span>
-				</div>
-				<div class="course-details-body">
-					<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、
-					App Cache、HTML5 多线程和HTML5消息推送等内容。本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，
-					依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、
-					HTML5 多线程和HTML5消息推送等内容。</p>
-					<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、
-					GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消息推送等内容。本课程详细讲解了HTML5的
-					各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存
-					储、App Cache、HTML5 多线程和HTML5消息推送等内容。</p>
-					<p>本课程详细讲解了HTML5的各个方面，课程从环境搭建开始，依次讲述了HTML5新元素、
-					Canvas、SVG、Audio、GPS定位、拖拽效果、WEB存储、App Cache、HTML5 多线程和HTML5消
-					息推送等内容。</p>
-				</div>
-			</div>
-</div>
-</div>
-
-
-
-
-
-<!-- 6.底部条：bottombar -->
+		</div>
+		<!-- 6.底部条：bottombar -->
 		<div class="bottombar hidden-sm">
 			<div class="container">
 				<!-- 底部功能菜单 -->
@@ -214,7 +198,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-12 col-lg-5 ">
+					<div class="col-sm-12 col-md-12 col-lg-5">
 						<div class="contact">
 							<span class="fa fa-fax"></span>
 							<div class="hotline">
@@ -225,8 +209,8 @@
 					</div>
 				</div>
 				<!-- 版权声明 -->
-				<div class="row hidden-sm" >
-					<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="row  hidden-sm">
+					<div class="col-md-12 col-lg-12">
 						<div class="copyright">
 							Copyright © 2016 iqianduan.com, All Rights Reserved 版权所有 <br>
 							北京前端教育科技有限公司　京ICP备123456号-1 京公网安备110180201608号
@@ -235,38 +219,44 @@
 				</div>
 			</div>
 		</div>
-	<!-- 7、页签条：tabbar————仅在PHONE中显示，功能约等于顶部的导航条，但是最多只能放六项 -->
-	<div class="tabbar hidden-md hidden-lg">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-5-1">
-					<div class="tab active"><span class="fa fa-home"></span>
-					<div>首页</div></div>
-				</div>
-				<div class="col-sm-5-1">
-					<div class="tab"><span class="fa fa-map"></span>
-					<div>课程</div></div>
-				</div>
-				<div class="col-sm-5-1">
-					<div class="tab"><span class="fa fa-bank"></span>
-					<div>校区</div></div>
-				</div>
-				<div class="col-sm-5-1">
-					<div class="tab"><span class="fa fa-address-card"></span>
-					<div>讲师</div></div>
-				</div>
-				<div class="col-sm-5-1">
-					<div class="tab"><span class="fa fa-user"></span>
-					<div>用户</div></div>
+		<!-- 7.页签条：tabbar——仅在PHONE中显示，功能约等于顶部的导航条，但是最多只能放六项 -->
+		<div class="tabbar hidden-md hidden-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5-1">
+						<div class="tab  active">
+							<span class="fa fa-home"></span>
+							<div>首页</div>
+						</div>
+					</div>
+					<div class="col-sm-5-1">
+						<div class="tab">
+							<span class="fa fa-map"></span>
+							<div>课程</div>
+						</div>
+					</div>
+					<div class="col-sm-5-1">
+						<div class="tab">
+							<span class="fa fa-bank"></span>
+							<div>校区</div>
+						</div>
+					</div>
+					<div class="col-sm-5-1">
+						<div class="tab">
+							<span class="fa fa-address-card"></span>
+							<div>讲师</div>
+						</div>
+					</div>
+					<div class="col-sm-5-1">
+						<div class="tab">
+							<span class="fa fa-user"></span>
+							<div>用户</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- 在此处引入所有的JS文件 -->
-	     <script src="js/components.js"> </script>
-		 <script src="js/course-detail.js" ></script>
-
-
+		<script src="js/components.js"></script>
+		<script src="js/course-detail.js"></script>
 	</body>
 </html>
-
