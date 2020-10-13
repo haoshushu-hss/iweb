@@ -1,0 +1,29 @@
+{
+  "name": "iweb_backend",
+  "version": "2.0.1",
+  "description": "iWeb project backend data API subsystem ",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/haoshushu-hss/iweb.git"
+  },
+  "keywords": [
+    "iweb",
+    "backend",
+    "api",
+    "haoshushu-hss"
+  ],
+  "author": "haoshushu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haoshushu-hss/iweb/issues"
+  },
+  "homepage": "https://github.com/haoshushu-hss/iweb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
